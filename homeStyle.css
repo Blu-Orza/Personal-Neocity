@@ -1,0 +1,402 @@
+*{
+    box-sizing: border-box;
+    list-style-type: none;
+    text-align: center;
+}
+
+html{
+    margin: 0%;
+    padding: 0%;
+    height: 100%;
+    background-image: url(https://sadhost.neocities.org/images/tiles/wicker.jpg);
+}
+
+.home-wrapper{
+    position: relative;
+}
+
+#homeHeader{
+    display: flex;
+    padding-left: 16%;
+    height: 170px;
+    width: 70%;
+    border-radius: 3cap;
+    border: 8px solid rgb(223,188,158);
+    background-image: url(https://i.pinimg.com/736x/c7/10/64/c71064bce76ae574c9758ec7452bdef3.jpg);
+    margin-top: 80px;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-bottom: 15px;
+    font-family: "Rubik Mono One", monospace;
+    color: rgb(160, 196, 160);
+    font-size: 30px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.87);
+    box-shadow: 2px 2px 4px rgb(61, 61, 59);
+}
+
+#indexgrid{
+    margin-right: 100px;
+    margin-left: 100px;
+    padding-bottom: 100px;
+    position: relative;
+    display: grid;
+    z-index: 1;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 200px 200px 50px 200px 200px 200px 200px;
+    grid-row-gap: 5px;
+    grid-column-gap: 10px;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+}
+
+.box{
+    background-image: url(https://i.pinimg.com/736x/c7/10/64/c71064bce76ae574c9758ec7452bdef3.jpg);
+    border-radius: 2cap;
+    border: 8px solid rgb(177, 190, 156);
+    text-align: justify;
+    padding: 35px 50px 50px 50px;
+    max-height: 400px;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color:rgb(117, 133, 93) #f5f5dc;
+}
+
+.box::-webkit-scrollbar {
+    width: 8px;                    
+}
+
+.box::-webkit-scrollbar-track {
+    background: #f5f5dc;
+    border-radius: 10px;
+}
+
+.box::-webkit-scrollbar-thumb {
+    background-color: #76b80b;
+    border-radius: 10px;
+    border: 2px solid #f5f5dc;
+}
+
+.home-inner-box{
+    background-color: rgb(247, 238, 211);
+    border-radius: 2cap;
+    border: 5px double rgb(223, 194, 169);
+    color: #5b3a2c;
+
+}
+
+.home-inner-box h2,
+.home-inner-box h3,
+.home-inner-box p:first-child {
+    margin-top: 0;
+}
+
+
+.box-h2{
+    background-color: rgb(190, 204, 168);
+    border-radius: 1cap;
+    margin-top: 0;
+    font-size: 1.2rem;
+}
+
+#waxSeal-home{
+    position: absolute;
+    margin-left: 830px;
+    margin-top: 600px;
+}
+
+#cat-home{
+    position: absolute;
+    z-index: 2;
+    margin-left: 270px;
+    margin-top: 140px;
+}
+
+#ceramic-raccon-home{
+    position: absolute;
+    z-index: 2;
+    margin-top: 900px;
+    margin-left: 440px;
+}
+
+#donut-home{
+    position: absolute;
+    z-index: 2;
+    margin-top: 440px;
+    margin-left: 880px;
+    transform: rotate(-20deg);
+}
+
+#navigationTab{
+    grid-row-start: 1;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    width: 220px;
+    height: max-content;
+    padding-bottom: 20px;
+    text-align: center;
+    border-radius: 2cap;
+    border: 1px solid rgb(99, 110, 82);
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(198, 218, 181);
+    background-image: linear-gradient(to bottom, rgba(198, 218, 181, 0.8), rgba(150, 180, 130, 0.8));
+    font-size: 16px;
+    color: rgb(99, 110, 82);
+}
+
+.sectionTab{
+    text-align: center;
+    width: 180px;
+    height: 35px;
+    margin-left: 20px;
+    padding-bottom: 10px;
+    color: rgb(213, 221, 201);
+    background-color: rgb(117, 133, 93);
+    border-radius: 1cap;
+    border: 2px solid rgb(99, 110, 82);
+}
+
+.navButton{
+    display: inline-block;
+    width: 180px;
+    height: 25px;
+    text-align: center;
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    padding-bottom: 25px;
+    border-radius: 1cap;
+    border: 2px solid rgb(99, 110, 82);
+    background-color: rgb(190, 204, 168);
+    font-size: 18px;
+    box-shadow: 2px 2px 2px rgb(99, 121, 99);
+    text-decoration: none;
+    color: rgb(99, 110, 82);
+}
+
+.navButton:hover {
+    box-shadow: inset 2px 2px 5px rgb(99, 121, 99);
+    transform: translateY(2px);
+    color: aliceblue;
+}
+
+#welcomeBoxGrid{
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 5;
+}
+
+#welcomeBoxGrid p{
+    text-align: justify;
+    line-height: 1.6;
+    font-size: 1rem;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+#welcomeBox{
+    padding: 50px;
+}
+
+.floating-succulent{
+    float: right;
+    margin: 20px 35px 0px 0px;
+    height: auto;
+}
+
+.stamps-marquee {
+    grid-column: 2 / 6;
+    grid-row: 3;
+    overflow: hidden;
+    height: 100px;
+    position: relative;
+    background-color: rgb(247, 238, 211);
+    border: 5px double rgb(223, 194, 169);
+    height: 70px;
+
+}
+
+.marquee-track {
+    display: flex;
+    gap: 2rem;
+    width: max-content;
+    animation: scroll-marquee 60s linear infinite;
+}
+
+.stamps-marquee img {
+    height: 60px;
+    width: auto;
+    flex-shrink: 0;
+}
+
+@keyframes scroll-marquee {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+#clapGrid{
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 5;
+    grid-column-end: 6;
+    padding: 10px;
+    margin-top: 25px;
+
+}
+
+#clapGrid p{
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+#clapBox{
+    padding: 10px;
+}
+
+#sparkly-bonsai-tree{
+    margin-top: 10px;
+}
+
+#cliquesGrid{
+    grid-row-start: 5;
+    grid-row-end: 6;
+    grid-column-start: 5;
+    grid-column-end: 6;
+    padding: 20px;
+}
+
+#cliquesBox{
+    padding: 10px;
+}
+
+.clique{
+    margin-bottom: 10px;
+}
+
+#updatesGrid{
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 5;
+    grid-column-end: 6;
+    padding: 10px;
+}
+
+#updatesBox{
+    padding: 20px 15px 15px 15px;
+}
+
+#updatesGrid p{
+    text-align: justify;
+}
+
+.update-icons {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.update-icons img{
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
+#todoGrid{
+    grid-row-start: 4;
+    grid-row-end: 6;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    padding: 15px;
+    margin-top: 25px;
+
+}
+
+#todoBox{
+    padding: 20px 15px 15px 15px;
+}
+
+#todoBox p{
+    text-align: center;
+}
+
+#chatboxGrid{
+    grid-row-start: 4;
+    grid-row-end: 6;
+    grid-column-start: 3;
+    grid-column-end: 5;
+    padding: 30px;
+    margin-top: 25px;
+}
+
+#chatboxBox{
+    padding: 20px;
+}
+
+#dollie-home{
+    position: absolute;
+    pointer-events: none;
+    z-index: 0;
+    margin-top: 800px;
+    margin-right: 20px;
+}
+
+#neighborsGrid{
+    grid-row-start: 6;
+    grid-row-end: 8;
+    grid-column-start: 4;
+    grid-column-end: 6;
+    padding: 30px;
+}
+
+#neighborsBox{
+    padding: 30px;
+}
+
+#buttonGrid{
+    grid-row: 6 / 7;
+    grid-column: 2 / 4;
+}
+
+#buttonBox{
+    padding: 10px;
+    margin-top: 5px;
+}
+
+#buttonBox p{
+    font-weight: bolder;
+    font-size: 1.1rem;
+}
+
+#guestbookGrid{
+    grid-row: 7 / 8;
+    grid-column: 2 / 3;
+    padding: 10px;
+}
+
+#guestbookBox{
+    padding: 5px;
+}
+
+#guestbookBox p{
+    margin-top: 5px;
+    font-size: 1.3rem;
+    font-weight: bolder;
+}
+
+#visitCounterGrid{
+    grid-row: 7 / 8;
+    grid-column: 3 / 4;
+    padding: 15px;
+}
+
+#visitCounterBox{
+
+    padding:60px 10px 55px 10px;
+}

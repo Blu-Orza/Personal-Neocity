@@ -40,24 +40,25 @@ h2{
     z-index: 2;
     transform: scaleX(-1);
     rotate: 350deg;
-    margin-top: 40px;
-    margin-left: 5px;
+    margin-top: 60px;
+    margin-left: 25px;
 }
 
 .about-navbar{
-    grid-column-start: 1;
-    grid-column-end: 4;
-    grid-row-start: 1;
-    grid-row-end: 1;
+    position: absolute;
+    z-index: 1;
     display: flex;
+    width: 1000px;
+    margin-left: 220px;
     flex-direction: row;
-    margin-bottom: 50px;
 }
 
 .navbar-button {
     cursor: pointer;
+    position: relative;
+    z-index: 1;
     display: flex;
-    align-items: center;
+    width: 100%;
     justify-content: center;
     padding: 10px;
 }
@@ -65,17 +66,19 @@ h2{
 .about-grid{
     display: grid;
     position: relative;
-    z-index: 1;
     grid-template-columns: 250px 500px 250px;
     grid-template-rows: 50px 500px;
     column-gap: 10px;
-    margin: 100px 200px 100px 165px;
+    margin: 0px 200px 100px 165px;
+    padding-top: 60px;
     color: rgb(41, 70, 68);
     font-size: 14px;
     font-optical-sizing: auto;
 }
 
 .about-center-box{
+    position: relative;
+    z-index: 1;
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 2;
@@ -164,9 +167,12 @@ h2{
 }
 
 #right-side-box{
+    position: relative;
+    z-index: 1;
     grid-column-start: 3;
     grid-column-end: 4;
     height: fit-content;
+    margin-top: 50px;
     padding-bottom: 10px;
 }
 

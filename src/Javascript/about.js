@@ -38,3 +38,20 @@ buttons.forEach(btn => {
   });
 });
 
+document.addEventListener("DOMContentLoaded", () => {
+  const images = document.querySelectorAll(".hover-image");
+
+  images.forEach(img => {
+    const normalSrc = img.getAttribute("data-normal");
+    const hoverSrc = img.getAttribute("data-hover");
+
+    img.addEventListener("mouseenter", () => {
+      img.src = hoverSrc;
+    });
+
+    img.addEventListener("mouseleave", () => {
+      img.src = normalSrc;
+    });
+
+  });
+})
